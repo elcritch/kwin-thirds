@@ -134,9 +134,9 @@ function shortcut(text, defaultShortcut, func) {
   registerShortcut(text, text, defaultShortcut, func);
 }
 
-shortcut("Thirds: Window to Left 1/3", "Meta+Left", function () { resizeAndMove(0, false); });
-shortcut("Thirds: Window to Horizontal Middle 1/3", "Meta+Down", function () { resizeAndMove(1, false); });
-shortcut("Thirds: Window to Right 1/3", "Meta+Right", function () { resizeAndMove(2, false); });
+shortcut("Thirds: Window to Left 1/3", "Meta+Shift+Left", function () { resizeAndMove(0, false); });
+shortcut("Thirds: Window to Horizontal Middle 1/3", "Meta+Shift+Down", function () { resizeAndMove(1, false); });
+shortcut("Thirds: Window to Right 1/3", "Meta+Shift+Right", function () { resizeAndMove(2, false); });
 
 shortcut("Thirds: Window to Left 2/3", "Meta+Ctrl+Left", function () { resizeAndMove(0, true); });
 shortcut("Thirds: Window to Horizontal Middle 2/3", "Meta+Ctrl+Down", function () { resizeAndMove(1, true); });
