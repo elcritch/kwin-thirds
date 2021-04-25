@@ -12,20 +12,26 @@ function resizeAndMove(horizontalThird, twoThirds) {
 
   var g = workspace.activeClient.geometry;
 
-  var numThirds = twoThirds ? 2 : 1;
+  var numThirds = twoThirds ? 4 : 3;
 
-  var thirdWidth = placementArea.width / 3;
+  var thirdWidth = placementArea.width / 7;
   var width = numThirds * thirdWidth;
   var left;
-  if (numThirds == 1) {
-    left = placementArea.x + horizontalThird * thirdWidth;
-  } else if (numThirds == 2) {
+  if (numThirds == 3) {
     if (horizontalThird == 0) {
       left = placementArea.x;
     } else if (horizontalThird == 1) {
-      left = placementArea.x + thirdWidth / 2;
+      left = placementArea.x + thirdWidth * 3;
     } else if (horizontalThird == 2) {
-      left = placementArea.x + thirdWidth;
+      left = placementArea.x + thirdWidth * 4;
+    }
+  } else if (numThirds == 4) {
+    if (horizontalThird == 0) {
+      left = placementArea.x;
+    } else if (horizontalThird == 1) {
+      left = placementArea.x + thirdWidth * 2;
+    } else if (horizontalThird == 2) {
+      left = placementArea.x + thirdWidth * 3;
     }
   }
 
